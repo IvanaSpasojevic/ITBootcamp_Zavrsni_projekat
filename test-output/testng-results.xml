@@ -1,95 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28883" started-at="2021-06-06T21:38:30Z" finished-at="2021-06-06T21:38:59Z">
+  <suite name="Default suite" duration-ms="32371" started-at="2021-06-07T20:44:46Z" finished-at="2021-06-07T20:45:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28883" started-at="2021-06-06T21:38:30Z" finished-at="2021-06-06T21:38:59Z">
-      <class name="test.TestStaff">
-        <test-method status="PASS" signature="createDriver()[pri:0, instance:test.TestStaff@68c4039c]" name="createDriver" is-config="true" duration-ms="7" started-at="2021-06-06T21:38:30Z" finished-at="2021-06-06T21:38:30Z">
+    <test name="Default test" duration-ms="32371" started-at="2021-06-07T20:44:46Z" finished-at="2021-06-07T20:45:18Z">
+      <class name="test.TestProfil">
+        <test-method status="PASS" signature="createDriver()[pri:0, instance:test.TestProfil@68c4039c]" name="createDriver" is-config="true" duration-ms="16" started-at="2021-06-07T20:44:46Z" finished-at="2021-06-07T20:44:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestStaff@68c4039c]" name="closePopup" is-config="true" duration-ms="10950" started-at="2021-06-06T21:38:30Z" finished-at="2021-06-06T21:38:41Z">
+        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestProfil@68c4039c]" name="closePopup" is-config="true" duration-ms="21117" started-at="2021-06-07T20:44:46Z" finished-at="2021-06-07T20:45:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePopup -->
-        <test-method status="FAIL" signature="addEmployee()[pri:0, instance:test.TestStaff@68c4039c]" name="addEmployee" duration-ms="13766" started-at="2021-06-06T21:38:41Z" finished-at="2021-06-06T21:38:55Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="_cd_staff"]/div[2]/div[2]/table/tbody/tr/td[2]/div[2]/div/table"}
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'LAPTOP-9T6JMJ0J', ip: '192.168.1.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\spaso\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c2b817fd71a138e5582b8623ebcfe9a
-*** Element info: {Using=xpath, value=//*[@id="_cd_staff"]/div[2]/div[2]/table/tbody/tr/td[2]/div[2]/div/table}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="_cd_staff"]/div[2]/div[2]/table/tbody/tr/td[2]/div[2]/div/table"}
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'LAPTOP-9T6JMJ0J', ip: '192.168.1.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\spaso\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c2b817fd71a138e5582b8623ebcfe9a
-*** Element info: {Using=xpath, value=//*[@id="_cd_staff"]/div[2]/div[2]/table/tbody/tr/td[2]/div[2]/div/table}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at objects.Staff.checkEmployee(Staff.java:131)
-at test.TestStaff.addEmployee(TestStaff.java:46)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="profilSettings2()[pri:0, instance:test.TestProfil@68c4039c]" name="profilSettings2" duration-ms="10989" started-at="2021-06-07T20:45:07Z" finished-at="2021-06-07T20:45:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestStaff@68c4039c]" name="closeDriver" is-config="true" duration-ms="4143" started-at="2021-06-06T21:38:55Z" finished-at="2021-06-06T21:38:59Z">
+        </test-method> <!-- profilSettings2 -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestProfil@68c4039c]" name="closeDriver" is-config="true" duration-ms="228" started-at="2021-06-07T20:45:18Z" finished-at="2021-06-07T20:45:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- test.TestStaff -->
+      </class> <!-- test.TestProfil -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

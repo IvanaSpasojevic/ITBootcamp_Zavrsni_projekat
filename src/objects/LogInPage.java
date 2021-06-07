@@ -53,7 +53,7 @@ public class LogInPage {
 	}
 
 	public static ArrayList<UserTest> getData(String fileName) {
-		
+
 		File f = new File(fileName);
 
 		ArrayList<UserTest> users = new ArrayList<UserTest>();
@@ -75,8 +75,10 @@ public class LogInPage {
 
 				UserTest user = new UserTest();
 
-				if(cell0 == null || cell0.toString()== "") {break;}
-				
+				if (cell0 == null || cell0.toString() == "") {
+					break;
+				}
+
 				user.setUsername(cell0.toString());
 				user.setPassword(cell1.toString());
 				user.setExpected(cell2.toString());
@@ -95,19 +97,15 @@ public class LogInPage {
 	}
 
 	public static void enterUser(WebDriver driver, String username, String password) {
-	
-	driver.findElement(By.xpath(LogInPageConstants.LOGINLINK_XPATH)).click();
-		
-	driver.findElement(By.id(LogInPageConstants.EMAIL_ID)).sendKeys(username);
-	
-	driver.findElement(By.id(LogInPageConstants.PASSWORD_ID)).sendKeys(password);
-	
-	driver.findElement(By.xpath(LogInPageConstants.LOGINBUTTON_XPATH)).click();
-		
-		
+
+		driver.findElement(By.xpath(LogInPageConstants.LOGINLINK_XPATH)).click();
+
+		driver.findElement(By.id(LogInPageConstants.EMAIL_ID)).sendKeys(username);
+
+		driver.findElement(By.id(LogInPageConstants.PASSWORD_ID)).sendKeys(password);
+
+		driver.findElement(By.xpath(LogInPageConstants.LOGINBUTTON_XPATH)).click();
+
 	}
-	
-	
-	
-	
+
 }

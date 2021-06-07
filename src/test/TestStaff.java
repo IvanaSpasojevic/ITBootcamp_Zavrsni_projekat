@@ -10,13 +10,11 @@ import org.testng.annotations.Test;
 import objects.Driver;
 import objects.LogInPage;
 import objects.Staff;
-import objects.TopMeni;
-import resource.TopMeniConstants;
 
 public class TestStaff {
 
 	WebDriver driver;
-	
+
 	@BeforeClass
 	public void createDriver() {
 
@@ -29,35 +27,55 @@ public class TestStaff {
 		LogInPage.enterUser(driver, "subotic88@gmail.com", "ivana88");
 		try {
 			Thread.sleep(5000);
-			} catch (Exception e) {}
+		} catch (Exception e) {
+		}
 	}
-	
+
 	@Test
 	public void addEmployee() {
-		
-		TopMeni.topMeni(driver, TopMeniConstants.STAFF_ID);
-		
+
 		Staff.addEmployee(driver, "pera", "petrovic", "pera@address.com");
-		
+
 		try {
 			Thread.sleep(4000);
-			} catch (Exception e) {}
-		
+		} catch (Exception e) {
+		}
+
 		Assert.assertTrue(Staff.checkEmployee(driver, "pera", "petrovic"));
-		
-		
-		
-		
+
+		Staff.deleteEmployee(driver, "pera", "petrovic");
+
 	}
-	
-	
-	
-	
+
+	@Test
+	public void renameEmployee() {
+
+		Staff.addEmployee(driver, "pera", "petrovic", "pera@address.com");
+		Assert.assertTrue(Staff.renameEmployee(driver, "mika"));
+		Staff.deleteEmployee(driver, "mika", "petrovic");
+	}
+
+	@Test
+	public void addEmployees() {
+
+		Staff.addEmployees(driver);
+
+		try {
+			Thread.sleep(4000);
+		} catch (Exception e) {
+		}
+
+		Assert.assertTrue(Staff.checkAllEmployees(driver));
+
+		Staff.deteteAllEmployees(driver);
+
+	}
+
 	@AfterMethod
 	public void closeDriver() {
-		
+
 		driver.close();
-		
+
 	}
-	
+
 }

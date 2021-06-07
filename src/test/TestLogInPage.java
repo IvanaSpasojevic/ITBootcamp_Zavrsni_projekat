@@ -1,7 +1,6 @@
 package test;
 
 import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -60,45 +59,34 @@ public class TestLogInPage {
 		sa.assertAll();
 
 	}
-	
-	@Test (priority=3)
-	public void logIn() {	
-		
-	
-	
-	ArrayList<UserTest> users = LogInPage.getData(LogInPageConstants.LOGIN_DATA);
-	
-	for(int i = 0; i < users.size(); i ++) {
-		
-		LogInPage.enterUser(driver, users.get(i).getUsername(), users.get(i).getPassword());
-		
-		try {
-			Thread.sleep(5000);
-			} catch (Exception e) {}
-		
-		String cuurentUrl = driver.getCurrentUrl();
-		
-		Assert.assertEquals(cuurentUrl, users.get(i).getExpected());
-		
-		
+
+	@Test(priority = 3)
+	public void logIn() {
+
+		ArrayList<UserTest> users = LogInPage.getData(LogInPageConstants.LOGIN_DATA);
+
+		for (int i = 0; i < users.size(); i++) {
+
+			LogInPage.enterUser(driver, users.get(i).getUsername(), users.get(i).getPassword());
+
+			try {
+				Thread.sleep(5000);
+			} catch (Exception e) {
+			}
+
+			String cuurentUrl = driver.getCurrentUrl();
+
+			Assert.assertEquals(cuurentUrl, users.get(i).getExpected());
+
+		}
+
 	}
-	
-	
-	
-	
-	
-	}
-	
-	
-	
-	
-	
+
 	@AfterMethod
 	public void closeDriver() {
-		
+
 		driver.close();
-		
+
 	}
-	
-	
+
 }
