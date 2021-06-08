@@ -13,7 +13,7 @@ public class LogInPageConstants {
 	
 	public static final String ABOUTUS_URL = "https://www.humanity.com/about";
 	
-	public static final String SCREENSHOT_PATH = "C:/Users/spaso/Desktop/screenshot/tets.jpg"; 
+	public static final String SCREENSHOT_PATH = "C:/temp/tets.jpg"; 
 
 	public static final String LOGINLINK_XPATH = "//*[@id=\"navbarSupportedContent\"]/div/a[2]";
 	

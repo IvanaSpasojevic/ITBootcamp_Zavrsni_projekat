@@ -11,6 +11,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import resource.StaffConstants;
 import resource.TopMeniConstants;
@@ -84,7 +85,6 @@ public class Staff {
 			wb.close();
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -128,7 +128,6 @@ public class Staff {
 			wb.close();
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return true;
@@ -250,4 +249,52 @@ public class Staff {
 
 	}
 
+	public static boolean addPicture(WebDriver driver, String firstName, String lastName, String email) {
+		
+		
+		Staff.addEmployee(driver, firstName, lastName, email);
+		
+		TopMeni.topMeni(driver, TopMeniConstants.STAFF_ID);
+		
+		try {
+			Thread.sleep(4000);
+			} catch (Exception e) {}
+		
+		driver.findElement(By.linkText(firstName + " " + lastName)).click();
+		
+		try {
+			Thread.sleep(4000);
+			} catch (Exception e) {}
+		
+		
+		driver.findElement(By.xpath(StaffConstants.EDITDETAILS_XPATH)).click();
+		
+		try {
+			Thread.sleep(4000);
+			} catch (Exception e) {}
+		
+		driver.findElement(By.id(StaffConstants.UPLOADPIC_ID)).click();
+		
+		try {
+			Thread.sleep(4000);
+			} catch (Exception e) {}
+		
+		
+		WebElement fileInput = driver.findElement(By.xpath("//input[@type='file']"));
+		fileInput.sendKeys("C:/Users/spaso/Desktop/kalimero.jpg");
+		
+		driver.navigate().refresh();
+		
+		try {
+			Thread.sleep(4000);
+			} catch (Exception e) {}
+		
+		
+		
+		return !driver.findElement(By.className(StaffConstants.AVATAR_CLASS)).getAttribute("src").equals("https://d3l54fgzztlejs.cloudfront.net/app/layout/images/no_avatar.png");
+		
+		
+	}
+	
+	
 }

@@ -26,5 +26,11 @@ public class StaffConstants {
 	
 	public static final String DELETE_XPATH = "//*[@id=\"_cd_staff\"]/div[2]/div[2]/div[2]/table/tbody/tr/td[1]/div[2]/ul/li[3]/span[2]/a";
 	
+	public static final String NOAVATAR_XPATH = "//*[@id=\"userAvatar6371893\"]";
+	
+	public static final String AVATAR_CLASS = "j-user-avatar-settings";
+	
+	public static final String UPLOADPIC_ID = "in-btn";
+	
 	
 }

@@ -11,6 +11,7 @@ import objects.Driver;
 import objects.LogInPage;
 import objects.Staff;
 
+
 public class TestStaff {
 
 	WebDriver driver;
@@ -71,6 +72,21 @@ public class TestStaff {
 
 	}
 
+	@Test
+	public void picture() {
+		
+		Assert.assertTrue(Staff.addPicture(driver, "pera", "petrovic", "pera@address.com"));
+		
+		Staff.deleteEmployee(driver, "pera", "petrovic");
+		
+		
+	}
+	
+	
+	
+	
+	
+	
 	@AfterMethod
 	public void closeDriver() {
 

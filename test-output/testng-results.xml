@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32371" started-at="2021-06-07T20:44:46Z" finished-at="2021-06-07T20:45:18Z">
+  <suite name="Default suite" duration-ms="127616" started-at="2021-06-08T17:28:43Z" finished-at="2021-06-08T17:30:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32371" started-at="2021-06-07T20:44:46Z" finished-at="2021-06-07T20:45:18Z">
-      <class name="test.TestProfil">
-        <test-method status="PASS" signature="createDriver()[pri:0, instance:test.TestProfil@68c4039c]" name="createDriver" is-config="true" duration-ms="16" started-at="2021-06-07T20:44:46Z" finished-at="2021-06-07T20:44:46Z">
+    <test name="Default test" duration-ms="127616" started-at="2021-06-08T17:28:43Z" finished-at="2021-06-08T17:30:50Z">
+      <class name="test.TestStaff">
+        <test-method status="PASS" signature="createDriver()[pri:0, instance:test.TestStaff@68c4039c]" name="createDriver" is-config="true" duration-ms="55" started-at="2021-06-08T17:28:43Z" finished-at="2021-06-08T17:28:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestProfil@68c4039c]" name="closePopup" is-config="true" duration-ms="21117" started-at="2021-06-07T20:44:46Z" finished-at="2021-06-07T20:45:07Z">
+        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestStaff@68c4039c]" name="closePopup" is-config="true" duration-ms="44100" started-at="2021-06-08T17:28:43Z" finished-at="2021-06-08T17:29:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePopup -->
-        <test-method status="PASS" signature="profilSettings2()[pri:0, instance:test.TestProfil@68c4039c]" name="profilSettings2" duration-ms="10989" started-at="2021-06-07T20:45:07Z" finished-at="2021-06-07T20:45:18Z">
+        <test-method status="PASS" signature="picture()[pri:0, instance:test.TestStaff@68c4039c]" name="picture" duration-ms="82210" started-at="2021-06-08T17:29:27Z" finished-at="2021-06-08T17:30:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- profilSettings2 -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestProfil@68c4039c]" name="closeDriver" is-config="true" duration-ms="228" started-at="2021-06-07T20:45:18Z" finished-at="2021-06-07T20:45:18Z">
+        </test-method> <!-- picture -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestStaff@68c4039c]" name="closeDriver" is-config="true" duration-ms="1147" started-at="2021-06-08T17:30:49Z" finished-at="2021-06-08T17:30:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- test.TestProfil -->
+      </class> <!-- test.TestStaff -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
