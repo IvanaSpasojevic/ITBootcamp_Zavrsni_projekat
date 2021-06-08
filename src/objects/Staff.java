@@ -250,51 +250,55 @@ public class Staff {
 	}
 
 	public static boolean addPicture(WebDriver driver, String firstName, String lastName, String email) {
-		
-		
+
 		Staff.addEmployee(driver, firstName, lastName, email);
-		
+
+		try {
+			Thread.sleep(4000);
+		} catch (Exception e) {
+		}
+
 		TopMeni.topMeni(driver, TopMeniConstants.STAFF_ID);
-		
+
 		try {
 			Thread.sleep(4000);
-			} catch (Exception e) {}
-		
+		} catch (Exception e) {
+		}
+
 		driver.findElement(By.linkText(firstName + " " + lastName)).click();
-		
+
 		try {
 			Thread.sleep(4000);
-			} catch (Exception e) {}
-		
-		
+		} catch (Exception e) {
+		}
+
 		driver.findElement(By.xpath(StaffConstants.EDITDETAILS_XPATH)).click();
-		
+
 		try {
 			Thread.sleep(4000);
-			} catch (Exception e) {}
-		
+		} catch (Exception e) {
+		}
+
 		driver.findElement(By.id(StaffConstants.UPLOADPIC_ID)).click();
-		
+
 		try {
 			Thread.sleep(4000);
-			} catch (Exception e) {}
-		
-		
+		} catch (Exception e) {
+		}
+
 		WebElement fileInput = driver.findElement(By.xpath("//input[@type='file']"));
-		fileInput.sendKeys("C:/Users/spaso/Desktop/kalimero.jpg");
-		
+		fileInput.sendKeys("C:/temp/kalimero.jpg");
+
 		driver.navigate().refresh();
-		
+
 		try {
 			Thread.sleep(4000);
-			} catch (Exception e) {}
-		
-		
-		
-		return !driver.findElement(By.className(StaffConstants.AVATAR_CLASS)).getAttribute("src").equals("https://d3l54fgzztlejs.cloudfront.net/app/layout/images/no_avatar.png");
-		
-		
+		} catch (Exception e) {
+		}
+
+		return !driver.findElement(By.className(StaffConstants.AVATAR_CLASS)).getAttribute("src")
+				.equals(StaffConstants.EXPECTED_IMAGE);
+
 	}
-	
-	
+
 }

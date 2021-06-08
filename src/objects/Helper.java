@@ -37,7 +37,7 @@ public class Helper {
 		LocalDateTime now = LocalDateTime.now();
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
-		String date = formatter.format(now);
+		String date = formatter.format(now.plusDays((now.getDayOfWeek().getValue() * -1) ));
 
 		return date;
 

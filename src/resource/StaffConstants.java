@@ -28,6 +28,8 @@ public class StaffConstants {
 	
 	public static final String NOAVATAR_XPATH = "//*[@id=\"userAvatar6371893\"]";
 	
+	public static final String EXPECTED_IMAGE = "\"https://d3l54fgzztlejs.cloudfront.net/app/layout/images/no_avatar.png\"";
+	
 	public static final String AVATAR_CLASS = "j-user-avatar-settings";
 	
 	public static final String UPLOADPIC_ID = "in-btn";

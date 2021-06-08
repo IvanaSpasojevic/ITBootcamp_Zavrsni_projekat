@@ -10,12 +10,15 @@ public class TopMeni {
 		driver.findElement(By.id(elementId)).click();
 
 		try {
-			Thread.sleep(5000);
-		} catch (Exception e) {
-		}
+			Thread.sleep(10000);
+		} catch (Exception e) {}
 
 		String curenntUrl = driver.getCurrentUrl();
 
+		try {
+			Thread.sleep(4000);
+		} catch (Exception e) {}
+		
 		return curenntUrl;
 	}
 

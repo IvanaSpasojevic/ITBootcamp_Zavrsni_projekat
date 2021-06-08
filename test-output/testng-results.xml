@@ -1,29 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="127616" started-at="2021-06-08T17:28:43Z" finished-at="2021-06-08T17:30:50Z">
+  <suite name="Default suite" duration-ms="512316" started-at="2021-06-08T19:12:15Z" finished-at="2021-06-08T19:20:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="127616" started-at="2021-06-08T17:28:43Z" finished-at="2021-06-08T17:30:50Z">
-      <class name="test.TestStaff">
-        <test-method status="PASS" signature="createDriver()[pri:0, instance:test.TestStaff@68c4039c]" name="createDriver" is-config="true" duration-ms="55" started-at="2021-06-08T17:28:43Z" finished-at="2021-06-08T17:28:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createDriver -->
-        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestStaff@68c4039c]" name="closePopup" is-config="true" duration-ms="44100" started-at="2021-06-08T17:28:43Z" finished-at="2021-06-08T17:29:27Z">
+    <test name="Default test" duration-ms="512316" started-at="2021-06-08T19:12:15Z" finished-at="2021-06-08T19:20:47Z">
+      <class name="test.TestTopMeni">
+        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closePopup" is-config="true" duration-ms="34406" started-at="2021-06-08T19:12:15Z" finished-at="2021-06-08T19:12:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePopup -->
-        <test-method status="PASS" signature="picture()[pri:0, instance:test.TestStaff@68c4039c]" name="picture" duration-ms="82210" started-at="2021-06-08T17:29:27Z" finished-at="2021-06-08T17:30:49Z">
+        <test-method status="PASS" signature="dashboard()[pri:1, instance:test.TestTopMeni@68c4039c]" name="dashboard" duration-ms="23686" started-at="2021-06-08T19:12:50Z" finished-at="2021-06-08T19:13:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- picture -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestStaff@68c4039c]" name="closeDriver" is-config="true" duration-ms="1147" started-at="2021-06-08T17:30:49Z" finished-at="2021-06-08T17:30:50Z">
+        </test-method> <!-- dashboard -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closeDriver" is-config="true" duration-ms="286" started-at="2021-06-08T19:13:13Z" finished-at="2021-06-08T19:13:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- test.TestStaff -->
+        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closePopup" is-config="true" duration-ms="30627" started-at="2021-06-08T19:13:14Z" finished-at="2021-06-08T19:13:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closePopup -->
+        <test-method status="PASS" signature="shiftplanning()[pri:2, instance:test.TestTopMeni@68c4039c]" name="shiftplanning" duration-ms="23946" started-at="2021-06-08T19:13:44Z" finished-at="2021-06-08T19:14:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shiftplanning -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closeDriver" is-config="true" duration-ms="232" started-at="2021-06-08T19:14:08Z" finished-at="2021-06-08T19:14:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closePopup" is-config="true" duration-ms="28143" started-at="2021-06-08T19:14:08Z" finished-at="2021-06-08T19:14:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closePopup -->
+        <test-method status="PASS" signature="timeClock()[pri:3, instance:test.TestTopMeni@68c4039c]" name="timeClock" duration-ms="23225" started-at="2021-06-08T19:14:37Z" finished-at="2021-06-08T19:15:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timeClock -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closeDriver" is-config="true" duration-ms="233" started-at="2021-06-08T19:15:00Z" finished-at="2021-06-08T19:15:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closePopup" is-config="true" duration-ms="31826" started-at="2021-06-08T19:15:00Z" finished-at="2021-06-08T19:15:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closePopup -->
+        <test-method status="PASS" signature="leaveVacation()[pri:4, instance:test.TestTopMeni@68c4039c]" name="leaveVacation" duration-ms="24018" started-at="2021-06-08T19:15:32Z" finished-at="2021-06-08T19:15:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- leaveVacation -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closeDriver" is-config="true" duration-ms="269" started-at="2021-06-08T19:15:56Z" finished-at="2021-06-08T19:15:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closePopup" is-config="true" duration-ms="32807" started-at="2021-06-08T19:15:56Z" finished-at="2021-06-08T19:16:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closePopup -->
+        <test-method status="PASS" signature="training()[pri:5, instance:test.TestTopMeni@68c4039c]" name="training" duration-ms="24114" started-at="2021-06-08T19:16:29Z" finished-at="2021-06-08T19:16:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- training -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closeDriver" is-config="true" duration-ms="313" started-at="2021-06-08T19:16:53Z" finished-at="2021-06-08T19:16:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closePopup" is-config="true" duration-ms="31272" started-at="2021-06-08T19:16:53Z" finished-at="2021-06-08T19:17:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closePopup -->
+        <test-method status="PASS" signature="staff()[pri:6, instance:test.TestTopMeni@68c4039c]" name="staff" duration-ms="20900" started-at="2021-06-08T19:17:25Z" finished-at="2021-06-08T19:17:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- staff -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closeDriver" is-config="true" duration-ms="259" started-at="2021-06-08T19:17:46Z" finished-at="2021-06-08T19:17:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closePopup" is-config="true" duration-ms="39738" started-at="2021-06-08T19:17:46Z" finished-at="2021-06-08T19:18:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closePopup -->
+        <test-method status="PASS" signature="aviability()[pri:7, instance:test.TestTopMeni@68c4039c]" name="aviability" duration-ms="26351" started-at="2021-06-08T19:18:26Z" finished-at="2021-06-08T19:18:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aviability -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closeDriver" is-config="true" duration-ms="250" started-at="2021-06-08T19:18:52Z" finished-at="2021-06-08T19:18:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closePopup" is-config="true" duration-ms="34910" started-at="2021-06-08T19:18:52Z" finished-at="2021-06-08T19:19:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closePopup -->
+        <test-method status="PASS" signature="payroll()[pri:8, instance:test.TestTopMeni@68c4039c]" name="payroll" duration-ms="23677" started-at="2021-06-08T19:19:27Z" finished-at="2021-06-08T19:19:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- payroll -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closeDriver" is-config="true" duration-ms="210" started-at="2021-06-08T19:19:51Z" finished-at="2021-06-08T19:19:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method status="PASS" signature="closePopup()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closePopup" is-config="true" duration-ms="31682" started-at="2021-06-08T19:19:51Z" finished-at="2021-06-08T19:20:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closePopup -->
+        <test-method status="PASS" signature="reports()[pri:9, instance:test.TestTopMeni@68c4039c]" name="reports" duration-ms="24534" started-at="2021-06-08T19:20:23Z" finished-at="2021-06-08T19:20:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reports -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:test.TestTopMeni@68c4039c]" name="closeDriver" is-config="true" duration-ms="221" started-at="2021-06-08T19:20:47Z" finished-at="2021-06-08T19:20:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- test.TestTopMeni -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
